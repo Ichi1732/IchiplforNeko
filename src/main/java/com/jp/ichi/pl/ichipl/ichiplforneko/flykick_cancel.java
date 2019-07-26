@@ -3,7 +3,6 @@ package com.jp.ichi.pl.ichipl.ichiplforneko;
 import org.bukkit.ChatColor;
 import org.bukkit.Location;
 import org.bukkit.World;
-import org.bukkit.block.CommandBlock;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -25,7 +24,7 @@ public class flykick_cancel implements Listener , CommandExecutor , TabCompleter
     private FileConfiguration config;
     final private Plugin pl;
 
-    //コンストラク
+    //コンストラクタ
     public flykick_cancel(Plugin pl, CustomConfig CustomConfig){
         this.Cconfig = CustomConfig;
         this.config = CustomConfig.getConfig();
