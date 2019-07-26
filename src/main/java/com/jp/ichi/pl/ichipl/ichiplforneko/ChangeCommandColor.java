@@ -30,7 +30,7 @@ public class ChangeCommandColor implements CommandExecutor {
 
             for(String string:args){
                 if(string!=null) {
-                    ChatColor.translateAlternateColorCodes('&',string);
+                    string = ChatColor.translateAlternateColorCodes('&',string);
                     list.add(string);
                 }
             }
