@@ -1,0 +1,30 @@
+name: IchiplforNeko
+version: 1.0-SNAPSHOT
+main: com.jp.ichi.pl.ichipl.ichiplforneko.IchiplforNeko
+api-version: 1.13
+
+commands:
+  combination:
+    description: combination
+    aliases: [com]
+    permission: op
+  beam:
+    description: beam
+    aliases: []
+    permission: op
+  flykickcancel:
+    description: flykickcancel
+    aliases: [fkc]
+    permission: ichipl.fkc
+  changecolor:
+    description: changecolor
+    aliases: [cc]
+    permission: op
+  cristalrotation:
+    description: cristalrotation
+    aliases: [cr]
+    permission: op
+  movesound:
+    description: movesound
+    aliases: []
+    permission: op
