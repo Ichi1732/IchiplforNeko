@@ -25,7 +25,7 @@ public class flykick_cancel implements Listener , CommandExecutor , TabCompleter
     private FileConfiguration config;
     final private Plugin pl;
 
-    //コンストラクタ
+    //コンストラク
     public flykick_cancel(Plugin pl, CustomConfig CustomConfig){
         this.Cconfig = CustomConfig;
         this.config = CustomConfig.getConfig();
