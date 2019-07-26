@@ -30,27 +30,7 @@ public class ChangeCommandColor implements CommandExecutor {
 
             for(String string:args){
                 if(string!=null) {
-                    string = string.replace("&0", ChatColor.BLACK.toString());
-                    string = string.replace("&1", ChatColor.DARK_BLUE.toString());
-                    string = string.replace("&2", ChatColor.DARK_GREEN.toString());
-                    string = string.replace("&3", ChatColor.DARK_AQUA.toString());
-                    string = string.replace("&4", ChatColor.DARK_RED.toString());
-                    string = string.replace("&5", ChatColor.DARK_PURPLE.toString());
-                    string = string.replace("&6", ChatColor.GOLD.toString());
-                    string = string.replace("&7", ChatColor.GRAY.toString());
-                    string = string.replace("&8", ChatColor.DARK_GRAY.toString());
-                    string = string.replace("&9", ChatColor.BLUE.toString());
-                    string = string.replace("&a", ChatColor.GREEN.toString());
-                    string = string.replace("&b", ChatColor.AQUA.toString());
-                    string = string.replace("&c", ChatColor.RED.toString());
-                    string = string.replace("&d", ChatColor.LIGHT_PURPLE.toString());
-                    string =string.replace("&e", ChatColor.YELLOW.toString());
-                    string = string.replace("&f", ChatColor.WHITE.toString());
-                    string = string.replace("&l", ChatColor.BOLD.toString());
-                    string = string.replace("&m", ChatColor.STRIKETHROUGH.toString());
-                    string = string.replace("&n", ChatColor.UNDERLINE.toString());
-                    string = string.replace("&o", ChatColor.ITALIC.toString());
-                    string = string.replace("&r", ChatColor.RESET.toString());
+                    ChatColor.translateAlternateColorCodes('&',string);
                     list.add(string);
                 }
             }
