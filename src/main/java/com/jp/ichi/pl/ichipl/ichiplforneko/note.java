@@ -242,30 +242,38 @@ public class note implements Listener, CommandExecutor, TabCompleter {
         int count = 0;
         switch (Tone){
             case "F":
-                count=0;
+                //F
+                count=-1;
                 break;
             case "G":
-                count=2;
+                //G
+                count=1;
                 break;
             case "A":
-                count=4;
+                //A
+                count=3;
                 break;
             case "B":
+                //B
                 count=5;
                 break;
             case "C":
-                count=7;
+                //C
+                count=6;
                 break;
             case "D":
-                count=9;
+                //D
+                count=8;
                 break;
             case "E":
+                //E
                 count=10;
                 break;
         }
 
         count= count+Octave*12;
-        if(!isSharped) count--;
+        if(isSharped) count++;
+        else if(Tone.equals("F"))count +=12;
 
 
         switch (count){
